@@ -98,7 +98,7 @@ pip install mcp-space-life-sciences
 ### Install from source
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/MCP_Space_Life_Science_KGs.git
+git clone https://github.com/asaravia-butler/MCP_Space_Life_Science_KGs.git
 cd MCP_Space_Life_Science_KGs
 pip install -e .
 ```
@@ -350,10 +350,10 @@ If you use this integration in your research, please cite:
 ### This Work
 ```bibtex
 @software{mcp_space_life_sciences2025,
-  author = {[Your Name]},
+  author = {[Amanda Saravia-Butler]},
   title = {MCP Space Life Sciences KGs: Integrated Knowledge Graph Server},
-  year = {2025},
-  url = {https://github.com/YOUR-USERNAME/MCP_Space_Life_Science_KGs}
+  year = {2026},
+  url = {https://github.com/asaravia-butler/MCP_Space_Life_Science_KGs}
 }
 ```
 
@@ -375,14 +375,14 @@ If you use this integration in your research, please cite:
 
 **GeneLab**:
 ```bibtex
-@article{ray2019genelab,
-  title={GeneLab: Omics database for spaceflight experiments},
-  author={Ray, Shayoni and Gebre, Samrawit and Fogle, Homer and others},
-  journal={Bioinformatics},
-  volume={35},
-  number={10},
-  pages={1753--1759},
-  year={2019}
+@article{gebre2025osdr,
+  title={NASA open science data repository: open science for life in space},
+  author={Gebre SG, Scott RT, Saravia-Butler AM, Lopez DK, Sanders LM, Costes SV},
+  journal={Nucleic Acids Res.},
+  volume={53},
+  number={D1},
+  pages={D1697-D1710},
+  year={2025}
 }
 ```
 
@@ -406,7 +406,7 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 ### Development Setup
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/MCP_Space_Life_Science_KGs.git
+git clone https://github.com/asaravia-butler/MCP_Space_Life_Science_KGs.git
 cd MCP_Space_Life_Science_KGs
 pip install -e ".[dev]"
 pytest tests/
@@ -414,7 +414,7 @@ pytest tests/
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+Apache 2.0 License - see [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
@@ -429,9 +429,8 @@ Special thanks to the open science community for making these resources availabl
 
 ## Contact
 
-- **Issues**: [GitHub Issues](https://github.com/YOUR-USERNAME/MCP_Space_Life_Science_KGs/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/YOUR-USERNAME/MCP_Space_Life_Science_KGs/discussions)
-- **Email**: your.email@example.com
+- **Issues**: [GitHub Issues](https://github.com/asaravia-butler/MCP_Space_Life_Science_KGs/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/asaravia-butler/MCP_Space_Life_Science_KGs/discussions)
 
 ## Related Projects
 
