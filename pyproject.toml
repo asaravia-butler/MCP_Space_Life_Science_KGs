@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-space-life-sciences"
+version = "0.1.0"
+description = "Integrated MCP server for GeneLab, PrimeKG, and SPOKE-OKN knowledge graphs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "MCP Space Life Sciences Contributors"}
+]
+keywords = [
+    "knowledge-graph",
+    "bioinformatics",
+    "space-biology",
+    "nasa-genelab",
+    "precision-medicine",
+    "mcp-server"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "mcp>=0.1.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "neo4j>=5.0.0",
+    "SPARQLWrapper>=2.0.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "networkx>=3.0",
+    "matplotlib-venn>=0.11.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+    "jupyter>=1.0.0",
+]
+
+[project.scripts]
+mcp-space-life-sciences = "mcp_space_life_sciences.server:main"
+
+[project.urls]
+Homepage = "https://github.com/YOUR-USERNAME/MCP_Space_Life_Science_KGs"
+Documentation = "https://github.com/YOUR-USERNAME/MCP_Space_Life_Science_KGs/tree/main/docs"
+Repository = "https://github.com/YOUR-USERNAME/MCP_Space_Life_Science_KGs"
+Issues = "https://github.com/YOUR-USERNAME/MCP_Space_Life_Science_KGs/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
